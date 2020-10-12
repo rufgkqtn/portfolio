@@ -32,6 +32,12 @@
 * {
   box-sizing: border-box;
 }
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /*Typography*/
 h1 {
   font-size: var(--font-large);
@@ -74,7 +80,7 @@ ul {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: pink;
+  background-color: var(--color-dark-pink);
   align-items: center;
   padding: 20px;
   color: var(--color-white);
@@ -108,4 +114,18 @@ ul {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__title,
+.home__discription {
+  color: var(--color-white);
+}
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-boder-radius);
 }
