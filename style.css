@@ -106,6 +106,14 @@ ul {
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
 }
+.navbar__toggle-btn{
+  position: absolute;
+  right:32px;
+  top: 24px;
+  font-size: 24px;
+  color:var(--color-white);
+  display: none;
+}
 /*home*/
 #Home {
   background: url("imgs/homebackground/HBG.png") center/cover no-repeat;
@@ -367,4 +375,34 @@ border-radius: var(--size-boder-radius);
   color:var(--color-dark-white);
   transition:  all var(--animation-duration) ease-in;
 }
-
+@media screen and (max-width:768px){
+  .navbar__toggle-btn{
+    display: block;
+  }
+  #navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    width: 100%;
+  }
+  .about__majors{
+    flex-direction: column;
+  }
+  .about__major{
+    margin-bottom: 38px;
+  }
+  .skillset{
+    flex-direction: column;
+  }
+  .project{
+    flex-grow: 1;
+  }
+  .testimonials__avartar{
+    width: 80px;
+    height: 80px;
+  }
+}
