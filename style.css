@@ -80,12 +80,19 @@ ul {
 }
 /*Nabar*/
 #navbar {
+  position: fixed;  
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-dark-pink);
+  background-color: transparent;
   align-items: center;
   padding: 20px;
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
+#navbar.navbar--dark{
+  background-color: var(--color-pink);
+  padding:8px;
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -118,6 +125,7 @@ ul {
 #Home {
   background: url("imgs/homebackground/HBG.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 .home__avatar {
