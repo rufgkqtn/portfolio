@@ -89,6 +89,7 @@ ul {
   padding: 20px;
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 #navbar.navbar--dark{
   background-color: var(--color-pink);
@@ -253,9 +254,10 @@ ul {
   list-style: none;
   padding: 20px;
 }
-/*Word*/
+/*Work*/
 .work__categories {
   margin: 40px;
+  z-index: 0;
 }
 .category__btn {
   border: 1px solid var(--color-dark-white);
